@@ -30,7 +30,7 @@ export default function CoreMemoriesSection() {
   return (
     <PageLayout
       title="core memories"
-      subtitle="a collection of our most cherished memories and experiences, less our wedding and trips around the world"
+      subtitle="Proident eiusmod do fugiat aliqua dolor velit ipsum proident. Aliqua eiusmod adipisicing proident et. Dolore nisi velit nisi aliqua mollit quis laborum. Esse id dolor aliqua commodo velit duis incididunt ad. Exercitation nostrud tempor do reprehenderit ullamco esse dolor esse. Cillum laborum veniam cillum qui dolore quis laboris. Aute irure proident adipisicing id officia."
     >
       <div className="flex w-full flex-col gap-4">
         {data?.map((coreMemory, index) => (
