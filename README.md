@@ -94,33 +94,25 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+- Set up a firebase application.
+- Set up a planetscale account and database.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/javianng/memories-hub.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = "ENTER YOUR API";
-   ```
+3. Enter your API in `.env`. You can copy and use the `.env.example` provided wiht your own api keys.
+4. In `admin.tsx`, uncomment the codes that are commented out and remove the existing button code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

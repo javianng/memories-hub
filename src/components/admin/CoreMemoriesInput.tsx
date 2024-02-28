@@ -67,7 +67,7 @@ export default function CoreMemoriesInput() {
             onChange={(e) => setSubtitleInput(e.target.value)}
           />
         </label>
-        <button className="btn" onClick={() => {}}>
+        <button className="btn" onClick={() => undefined}>
           {/* <button className="btn" onClick={handleAddDateRequest}> */}
           add core memory
         </button>

@@ -111,7 +111,7 @@ export default function TimelineItemsInput() {
           />
         </div>
 
-        <button className="btn" onClick={() => {}}>
+        <button className="btn" onClick={() => undefined}>
           {/* <button className="btn" onClick={handleAddTimelineItem}> */}
           add timeline item
         </button>
