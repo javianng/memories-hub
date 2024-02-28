@@ -7,7 +7,7 @@ export default function Dates() {
   return (
     <PageLayout
       title="date requests"
-      subtitle="as a highly loved individual, here lies all the date requests from the past from a random guy. may this list grow so long that it takes very long to update this website since it is not supported by a server."
+      subtitle="Aliquip est quis do. Anim eu enim magna adipisicing. Consequat sint voluptate excepteur ex do pariatur ad aliquip deserunt eiusmod proident. Aliqua aliquip irure do eiusmod nostrud consectetur elit exercitation mollit nostrud laboris ullamco ipsum. Labore ad est sit elit non nostrud officia esse occaecat minim amet."
     >
       {data?.map((dateRequest) => (
         <DateRequestEnvelope
