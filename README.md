@@ -99,6 +99,10 @@
 
 ## Getting Started
 
+To access the deployed / preview, use the following credentials.
+- Username: user
+- Password: password
+
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
