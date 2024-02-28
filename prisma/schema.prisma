@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model DateRequest {
+    idx           String         @id @default(cuid())
+    title         String?        @db.Text
+    date          DateTime       @default(now())
+    description   String?        @db.Text
+    timelineitems TimelineItem[]
+    approved      Boolean        @default(false)
+
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
+
+model TimelineItem {
+    idx            String       @id @default(cuid())
+    title          String?      @db.Text
+    description    String?      @db.Text
+    logo           String?
+    datetime       DateTime     @default(now())
+    DateRequest    DateRequest? @relation(fields: [dateRequestIdx], references: [idx])
+    dateRequestIdx String?
+
+    @@index([dateRequestIdx])
+}
+
+model CoreMemory {
+    idx                 String                @id @default(cuid())
+    title               String?               @db.Text
+    subtitle            String?               @db.Text
+    date                DateTime              @default(now())
+    createdAt           DateTime              @default(now())
+    updatedAt           DateTime              @updatedAt
+    CoreMemoryComponent CoreMemoryComponent[]
+}
+
+model CoreMemoryComponent {
+    idx           String      @id @default(cuid())
+    title         String?     @db.Text
+    description   String?     @db.Text
+    image         String?
+    coreMemory    CoreMemory? @relation(fields: [coreMemoryIdx], references: [idx])
+    coreMemoryIdx String?
+
+    @@index([coreMemoryIdx])
+}
