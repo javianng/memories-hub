@@ -99,7 +99,8 @@ export default function CoreMemoryComponentInput() {
           />
         </label>
 
-        <button className="btn" onClick={handleAddCoreMemoryComponent}>
+        <button className="btn" onClick={() => {}}>
+          {/* <button className="btn" onClick={handleAddCoreMemoryComponent}> */}
           add core memory component
         </button>
       </div>

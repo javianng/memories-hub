@@ -67,7 +67,8 @@ export default function DateRequestsInput() {
             onChange={(e) => setDescriptionInput(e.target.value)}
           />
         </label>
-        <button className="btn" onClick={handleAddDateRequest}>
+        <button className="btn" onClick={() => {}}>
+          {/* <button className="btn" onClick={handleAddDateRequest}> */}
           add date request
         </button>
       </div>
