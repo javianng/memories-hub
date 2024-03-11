@@ -17,13 +17,6 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-
-  images: {
-    domains: [
-      "memorieshub-257e7.appspot.com",
-      "firebasestorage.googleapis.com",
-    ],
-  },
 };
 
 export default config;
